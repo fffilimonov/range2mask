@@ -8,7 +8,9 @@ function makemask(lbase,lstart,lstop) {
 #range
     if (lstart<lstop) {
         printf (base"[");
-        printf lstart"-"lstop;
+        for(z=lstart;z<=lstop;z++) {
+            printf z;
+        }
         print "]";
     }
 #single number
